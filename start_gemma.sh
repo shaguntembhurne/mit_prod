@@ -38,7 +38,7 @@ if [[ "$GPU_COUNT" -eq 1 ]]; then
         --cont-batching \
         --flash-attn on \
         --host 127.0.0.1 \
-        --port 8001
+        --port 2001
 else
     exec "$LLAMA" \
         --model "$MODEL" \
@@ -50,5 +50,5 @@ else
         --cont-batching \
         --flash-attn on \
         --host 127.0.0.1 \
-        --port 8001
+        --port 2001
 fi
