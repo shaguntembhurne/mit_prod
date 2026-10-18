@@ -34,3 +34,8 @@ Tested Gemma 4 12B using `llama.cpp` on 2 NVIDIA Tesla T4 GPUs.
 This was a **raw model API test**, without the MCP server or Django backend in the request flow. The results measure model-serving performance only, not the performance of the complete application.
 
 *Note: Results are from a single test run. Actual performance may vary depending on prompt length, response length, and server load.*
+
+### 6. run the mcp server 
+cd mcp_data_gov_in 
+./start_mcp.sh
+
