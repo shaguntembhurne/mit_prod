@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     # Local
     "authentication",
+    'chat',
 ]
 
 # ---------------------------------------------------------------------------
@@ -207,3 +208,18 @@ OTP_MAX_PER_HOUR = 5             # max OTP requests per email per hour
 # ---------------------------------------------------------------------------
 
 ALLOWED_EMAIL_DOMAIN = "mituniversity.edu.in"
+
+LLAMA_CPP_BASE_URL = config(
+    "LLAMA_CPP_BASE_URL",
+    default="http://127.0.0.1:2001/v1",
+)
+LLAMA_CPP_MODEL = config("LLAMA_CPP_MODEL", default="local-model")
+LLAMA_CPP_TIMEOUT_SECONDS = config(
+    "LLAMA_CPP_TIMEOUT_SECONDS",
+    default=120,
+    cast=int,
+)
+MCP_SERVER_URL = config(
+    "MCP_SERVER_URL",
+    default="http://127.0.0.1:8000/mcp",
+)
