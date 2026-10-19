@@ -39,3 +39,13 @@ This was a **raw model API test**, without the MCP server or Django backend in t
 cd mcp_data_gov_in 
 ./start_mcp.sh
 
+### 7. Auth Api
+- POST /api/auth/otp/request/ — Request an OTP.
+- POST /api/auth/otp/verify/ — Verify OTP and obtain JWT tokens.
+- POST /api/auth/token/refresh/ — Refresh the access token.
+- POST /api/auth/logout/ — Log out and invalidate the refresh token.
+- GET /api/auth/me/ — Retrieve the authenticated user's profile.
+Base URL: http://127.0.0.1:8000
+
+### 8. chat api
+POST /api/chat/ — authenticated conversation with llama.cpp and MCP tools

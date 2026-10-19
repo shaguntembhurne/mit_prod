@@ -2,3 +2,4 @@
 __pycache__/
 config/*.sqlite3
 .vscode/
+config/.env
